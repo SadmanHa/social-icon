@@ -1,0 +1,184 @@
+:root {
+    --facebook:rgb(107, 107, 235);
+    --instagram:rgb(255, 0, 119);
+    --linkedin:rgb(54, 113, 240);
+    --tiktok:rgb(0, 0, 0);
+    --bilibili:rgb(2, 171, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(32, 28, 29);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icons ul {
+    display: flex;
+    list-style-type: none;
+}
+.icons ul li {
+    margin: 30px;
+}
+
+.icons ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    transition: 0.5s;
+    text-shadow: 1px 1px 3px white;
+}
+.icons ul li:nth-child(1) a:hover {
+    background-color: var(--facebook);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--facebook) ;
+}
+.icons ul li:nth-child(2) a:hover {
+    background-color: var(--instagram);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--instagram) ;
+}
+.icons ul li:nth-child(3) a:hover {
+    background-color:var(--linkedin);
+    color: white;
+    box-shadow: 0px 0px 15px var(--linkedin) ;
+}
+.icons ul li:nth-child(4) a:hover {
+    background-color: var(--tiktok);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--tiktok) ;
+}
+.icons ul li:nth-child(5) a:hover {
+    background-color: var(--bilibili);
+    color: white;
+    box-shadow: 0px 0px 15px   var(--bilibili) ;
+}
+.icons ul li:nth-child(6) a:hover {
+    background: linear-gradient( to right, rgb(68, 68, 194) 10%,rgb(100, 167, 230) );
+    color: white;
+    box-shadow: 0px 0px 15px  rgb(68, 68, 194)  ;
+}
+.icons ul a::before {
+    content: "Facebook";
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    line-height: 45px;
+    /* opacity: 0; */
+    transition: 0.6s;
+    top: 6px;
+    left: -19px;
+    text-shadow: 1px 1px 3px white;
+    border: 1px solid rgba(44, 43, 43, 0.253);
+}
+.icons ul a:hover::before {
+    top: -68px;
+    left: -19px;
+    opacity: 1;
+    transition: 0.6s;
+}
+.icons ul li:nth-child(1) a::before {
+    content: "Facebook";
+    background-color: var(--facebook);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--facebook) ;
+}
+.icons ul li:nth-child(2) a::before {
+    content: "Instagram";
+    background-color: var(--instagram);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--instagram) ;
+}
+.icons ul li:nth-child(3) a::before {
+    content: "Linkedin";
+    background-color:var(--linkedin);
+    color: white;
+    box-shadow: 0px 0px 15px var(--linkedin) ;
+}
+.icons ul li:nth-child(4) a::before {
+    content: "Tiktok";
+    background-color: var(--tiktok);
+    color: white;
+    box-shadow: 0px 0px 15px  var(--tiktok) ;
+}
+.icons ul li:nth-child(5) a::before {
+    content: "Bilibili";
+    background-color:  var(--bilibili);
+    color: white;
+    box-shadow: 0px 0px 15px   var(--bilibili) ;
+}
+.icons ul li:nth-child(6) a::before {
+    content: "PayPal";
+    background: linear-gradient( to right, rgb(68, 68, 194) 10%,rgb(100, 167, 230) );
+    color: white;
+    box-shadow: 0px 0px 15px  rgb(68, 68, 194)  ;
+}
+.icons ul a::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.2s;
+    top: 22px;
+    left: 22px;
+}
+.icons ul a:hover::after {
+    top: -31px;
+    left: 23px;
+    opacity: 1;
+    transition: 0.6s;
+}
+.icons ul li:nth-child(1) a::after {
+    background-color: var(--facebook);
+    color: white;
+    box-shadow: 2px 2px 15px  var(--facebook) ;
+}
+.icons ul li:nth-child(2) a::after {
+    background-color:  var(--instagram);
+    color: white;
+    box-shadow: 2px 2px 15px   var(--instagram) ;
+}
+.icons ul li:nth-child(3) a::after {
+    background-color: var(--linkedin);
+    color: white;
+    box-shadow: 2px 2px 15px  var(--linkedin) ;
+}
+.icons ul li:nth-child(4) a::after {
+    background-color: var(--tiktok);
+    color: white;
+    box-shadow: 2px 2px 15px  var(--tiktok) ;
+}
+.icons ul li:nth-child(5) a::after {
+    background-color:  var(--bilibili);
+    color: white;
+    box-shadow: 2px 2px 15px   var(--bilibili) ;
+}
+.icons ul li:nth-child(6) a::after {
+    background: linear-gradient( -42deg, rgb(68, 68, 194) 42%,transparent 100% );
+    color: white;
+    box-shadow: 2px 2px 15px  rgb(68, 68, 194);
+}
